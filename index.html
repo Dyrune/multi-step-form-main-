@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body> 
+    <div class="container">
+      <!-- Sidebar start -->
+      <div class="Sidebar">
+        <div class="step-1">
+          <button id="button-one" class="step">1</button>
+          <div>
+            <div>Step 1</div>
+            <div>YOUR INFO</div>
+          </div>
+        </div>
+        <div class="step-2">
+          <button id="button-two" class="step">2</button>
+          <div>
+            <div>Step 2</div>
+            <div>SELECT PLAN</div>
+          </div>
+        </div>
+        <div class="step-3">
+          <button id="button-three" class="step">3</button>
+          <div>
+            <div>Step 3</div>
+            <div>ADD-ONS</div>
+          </div>
+        </div>
+        <div class="step-4">
+          <button id="button-four" class="step">4</button>
+          <div>
+            <div>step 4</div>
+            <div>SUMMARY</div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Step 1 start -->
+      <div id="page-one" class="page">
+        <div class="personal">Personal info</div>
+        <div class="pla" id="provide">
+          Please provide your name, email address, and phone number.
+        </div>
+        <div>
+          <div>
+            <div><span>Name</span></div>
+            <div>
+              <input
+                class="plaa"
+                required
+                type="text"
+                placeholder="e.g. Stephen King "
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div><span>Email Adress</span></div>
+            <div>
+              <input
+                class="plaa"
+                type="email"
+                required
+                placeholder="e.g. stephenking@lorem.com"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div><span>Phone Number</span></div>
+            <div>
+              <input
+                class="plaa"
+                type="number"
+                required
+                placeholder="e.g. +1 234 567 890"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="Next">Next Step</button>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <div id="page-two" class="page">
+        <div class="personal">Select your Plan</div>
+        <div class="pla" id="provide">
+          You have the option of monthly or yearly billing.
+        </div>
+        <div class="plan-type">
+          <button class="arcade" id="plan" data-plan="arcade">
+            <div><img src="/assets/images/icon-arcade.svg" alt="" /></div>
+            <div>
+              <div class="level">Arcade</div><div class="replace">
+              <div class="fee">$9/mo</div>
+              <div class="free">2 months free</div></div>
+              <div id="replace">
+              <div class="fee">$90/yr</div>
+              <div class="free">2 months free</div></div>
+            </div>
+          </button>
+          <button class="advanced" id="plan" data-plan="advanced">
+            <div><img src="/assets/images/icon-advanced.svg" alt="" /></div>
+            <div class="comp">
+              <div class="level">Advanced</div><div class="replace">
+              <div class="fee">$12/mo</div>
+              <div class="free">2 months free</div></div>
+              <div id="replace">
+              <div class="fee">$120/yr</div>
+              <div class="free">2 months free</div></div>
+            </div>
+          </button>
+          <button class="pro" id="plan" data-plan="pro">
+            <div><img src="/assets/images/icon-pro.svg" alt="" /></div>
+             <div>
+               <div class="level">Pro</div>
+               <div class="replace">
+              <div class="fee">$15/mo</div>
+              <div class="free">2 months free</div></div>
+              <div id="replace">
+              <div class="fee">$150/yr</div>
+              <div class="free">2 months free</div></div>
+            </div>
+          </button></button>
+        </div>
+        <div class="plan-typee">
+          <div class="plan-typee">
+              <div>Monthly</div>
+              <div>
+                  <label class="switch">
+                      <input type="checkbox" id="toggle">
+                      <span class="slider round"></span>
+                  </label>
+              </div>
+              <div>Yearly</div>
+          </div>
+        </div>
+        <div class="all-btn">
+          <button class="Back">Go back</button>
+          <button class="Next">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+      <div id="page-three" class="page">
+        <div>
+          <div class="personal">Pick add-ons</div>
+          <div class="pla" id="provide">
+            Add-ons help enhance your gaming experience.
+          </div>
+        </div> <div class="vice">
+        <button id="prage" class="add-ons"><div>
+          <img
+            src="/assets/images/icon-checkmark.svg"
+            class="icon-checkmark"
+            alt=""
+          /></div><div class="mid" style="margin-left: 28px;">
+          <div>Online service</div>
+          <div>Access to multiplayer games</div></div><div class="rep-cont">
+          <div class="replace">+$1/mo</div>
+          <div id="replace">+$10/yr</div></div>
+        </button>
+
+        <button id="prage" class="add-ons"><div>
+          <img
+            src="/assets/images/icon-checkmark.svg"
+            class="icon-checkmark"
+            alt=""
+          /></div><div class="mid">
+          <div>Larger storage </div>
+          <div>Extra 1TB of cloud save</div></div><div class="rep-cont">
+          <div class="replace">+$2/mo</div>
+          <div id="replace">+$20/yr</div></div>
+        </button>
+
+        <button id="prage" class="add-ons"><div>
+          <img
+            src="/assets/images/icon-checkmark.svg"
+            class="icon-checkmark"
+            alt=""
+          /></div><div class="mid" style="margin-left: 28px;">
+          <div>Customizable Profile Custom </div>
+          <div>theme on your profile</div></div><div class="rep-cont">
+          <div class="replace">+$2/mo</div>
+          <div id="replace">+$20/yr</div></div>
+        </button>
+      </div>
+        <div class="all-btn" style="margin-top: 10px;">
+          <button class="Back">Go back</button>
+          <button class="Next">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+      <div id="page-four" class="page">
+      <div class="personal"> Finishing up </div>
+       <div class="pla" id="provide"> Double-check everything looks OK before confirming.</div>
+        <div class="dynamic" id="dynamic-content">
+          
+          <div class="all-fin">
+            <div class="fin" id="fin-1"><div class="ar">
+            <div class="level">Arcade </div><div>
+            <div class="replace"> (Monthly)</div>
+            <div id="replace"> (Yearly)</div></div></div>
+            <div class="replace" id="rep">
+           <div class="fee">$9/mo</div></div>
+           <div id="replace" class="rep">
+           <div class="fee">$90/yr</div></div>
+          </div>
+          <div class="fin" id="fin-2"><div class="ar">
+           <div class="level">Advanced </div><div>
+           <div class="replace"> (Monthly)</div>
+           <div id="replace"> (Yearly)</div></div></div>
+           <div class="replace" id="rep">
+          <div class="fee">$12/mo</div></div>
+          <div id="replace" class="rep">
+          <div class="fee">$120/yr</div></div>
+        </div>
+        <div class="fin" id="fin-3"><div class="ar">
+          <div class="level">Pro </div><div>
+          <div class="replace"> (Monthly)</div>
+          <div id="replace"> (Yearly)</div></div></div>
+          <div class="replace" id="rep">
+         <div class="fee">$15/mo</div></div>
+         <div id="replace" class="rep">
+         <div class="fee">$150/yr</div></div>
+         </div>
+<div class="serv">
+        <div class="typeofserivice">
+          <div>Online Service</div>
+          <div class="rep-cont">
+            <div class="replace"><div class="fee"> +$1/mo</div></div>
+            <div id="replace"><div class="fee"> +$10/yr</div></div></div>
+        </div>
+        <div class="typeofserivice">
+          <div>Larger Storage</div>
+          <div class="rep-cont">
+            <div class="replace"><div class="fee"> +$2/mo</div></div>
+            <div id="replace"><div class="fee"> +$20/yr</div></div>
+          </div>
+        </div>
+        <div class="typeofserivice">
+          <div>Customizable Profile Custom</div>
+          <div class="rep-cont">
+            <div class="replace"><div class="fee"> +$2/yr</div></div>
+            <div id="replace"><div class="fee"> +$20/yr</div></div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+
+        <div class="tot">
+       <div class="total"> Total (per month)</div> 
+       <div class="total-fee"></div> 
+      </div>
+        <div class="all-btn">
+          <button class="Back">Go back</button>
+          <button class="Next">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+
+      <!-- Step 5 start -->
+      <div class="page" id="page-five" style="display: none;">
+        <img class="thanks" src="/assets/images/icon-thank-you.svg" alt="">
+      <div>  Thank you!</div> 
+        <div>
+        Thanks for confirming your subscription! We hope you have fun
+        using our platform. If you ever need support, please feel free to email
+        us at support@loremgaming.com.</div>
+      </div>
+      <!-- Step 5 end -->
+    </div>
+    <script src="script.js">
+</script>
+  </body>
+</html>

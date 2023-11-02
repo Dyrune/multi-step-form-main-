@@ -1,0 +1,341 @@
+body {
+    display: flex;
+    background-color: rgb(231, 231, 189);
+    justify-content: center;
+    padding: 100px;
+}
+
+.serv {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    margin-bottom: 20px;
+}
+
+.tot {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rep-cont {
+    display: flex;
+}
+
+.typeofserivice {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    justify-content: space-between;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+.ar {
+    display: flex;
+}
+
+.fin {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#switch {
+    cursor: pointer;
+}
+.icon-checkmark {
+    margin-right: 3em;
+    margin-left: 10px;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.discount {
+    margin-left: 7em;
+}
+
+
+.add-ons {
+    display: flex;
+    cursor: pointer;
+    width: 50vh;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: 1.5em;
+    align-items: center;
+    border-radius: 6px;
+    border: 1.2px solid rgb(214, 209, 209);
+}
+
+.add-ons:hover {
+    border: 1.2px solid darkgray;
+}
+
+.quality {
+    display: flex;
+    text-align: left;
+    margin-left: 7em;
+}
+
+#quality {
+    display: flex;
+    text-align: left;
+    margin-left: 7em;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    height: 70vh;
+    width: 73%;
+}
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+    width: 205px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.step {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    font-size: 18px;
+    margin-right: 15px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: 70vh 70vh;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15vh;
+    height: 40vh;
+}
+
+
+@font-face {
+    font-family: personal;
+    src: url(/assets/fonts/Ubuntu-Bold.ttf);
+}
+
+.Next {
+    background-color: blue;
+    width: 10em;
+    height: 3em;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    border-color: transparent;
+}
+
+@font-face {
+    font-family: pla;
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+
+.free {
+    font-family: pla;
+    font-weight: bold;
+}
+
+.fee {
+    color: darkgray;
+}
+
+.level {
+    font-family: personal;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+#plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 13px;
+    height: 10em;
+    text-align: left;
+    width: 14.5vh;
+    border-radius: 1em;
+    border: 1.2px solid rgb(214, 209, 209);
+}
+
+#plan:hover {
+    border: 1.2px solid darkgray;
+    cursor: pointer;
+}
+
+.plan-typee {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 50vh;
+    background-color: azure;
+    height: 3em;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.Back {
+    background-color: transparent;
+    border: none;
+    color: darkgray;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.all-btn {
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    justify-content: space-between;
+}
+
+.Back:hover {
+    color: black;
+}
+
+.plan-type {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 50vh;
+}
+
+.plaa {
+    width: 280px;
+    height: 23px;
+    border-radius: 0.4em;
+    border: 1.5px solid black;
+}
+
+.pla {
+    color: darkgray;
+    font-family: pla;
+}
+
+.personal {
+    font-family: personal;
+    font-size: 20px;
+}
+
+#button-one,
+#button-two,
+#button-three,
+#button-four {
+    cursor: pointer;
+}
+
+
+
+
+/* Add your existing CSS styles here */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e06fa;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.thanks {
+    width: 50px;
+    height: 50px;
+}
+
+#replace {
+    display: none;
+    flex-direction: column;
+}
+
+.rep-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.replace {
+    display: none;
+    flex-direction: column;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #0515f8;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #020f1a;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.icon-checkmark {
+    background-color: darkgray;
+}
+
