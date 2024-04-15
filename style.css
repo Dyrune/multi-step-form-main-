@@ -1,265 +1,4 @@
-body {
-    display: flex;
-    background-color: rgb(231, 231, 189);
-    justify-content: center;
-    padding: 100px;
-}
 
-.serv {
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    margin-bottom: 20px;
-}
-
-.tot {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.rep-cont {
-    display: flex;
-}
-
-.typeofserivice {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    justify-content: space-between;
-}
-
-.mid {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-}
-
-.ar {
-    display: flex;
-}
-
-.fin {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-#switch {
-    cursor: pointer;
-}
-.icon-checkmark {
-    margin-right: 3em;
-    margin-left: 10px;
-    height: 1.5em;
-    width: 1.5em;
-}
-
-.discount {
-    margin-left: 7em;
-}
-
-
-.add-ons {
-    display: flex;
-    cursor: pointer;
-    width: 50vh;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 70px;
-    margin-top: 1.5em;
-    align-items: center;
-    border-radius: 6px;
-    border: 1.2px solid rgb(214, 209, 209);
-}
-
-.add-ons:hover {
-    border: 1.2px solid darkgray;
-}
-
-.quality {
-    display: flex;
-    text-align: left;
-    margin-left: 7em;
-}
-
-#quality {
-    display: flex;
-    text-align: left;
-    margin-left: 7em;
-}
-
-.container {
-    display: flex;
-    background-color: white;
-    flex-direction: row;
-    height: 70vh;
-    width: 73%;
-}
-
-.step-1,
-.step-2,
-.step-3,
-.step-4 {
-    width: 205px;
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
-}
-
-.step {
-    width: 60px;
-    height: 60px;
-    border: 2px solid white;
-    font-size: 18px;
-    margin-right: 15px;
-    background-color: transparent;
-    border-radius: 30px;
-}
-
-.Sidebar {
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-size: 70vh 70vh;
-    background-repeat: no-repeat;
-    background-image: url(/assets/images/bg-sidebar-desktop.svg);
-}
-
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15vh;
-    height: 40vh;
-}
-
-
-@font-face {
-    font-family: personal;
-    src: url(/assets/fonts/Ubuntu-Bold.ttf);
-}
-
-.Next {
-    background-color: blue;
-    width: 10em;
-    height: 3em;
-    border-radius: 7px;
-    cursor: pointer;
-    color: white;
-    border-color: transparent;
-}
-
-@font-face {
-    font-family: pla;
-    src: url(/assets/fonts/Ubuntu-Regular.ttf);
-}
-
-.free {
-    font-family: pla;
-    font-weight: bold;
-}
-
-.fee {
-    color: darkgray;
-}
-
-.level {
-    font-family: personal;
-    font-size: 20px;
-    margin-right: 3px;
-}
-
-#plan {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 13px;
-    height: 10em;
-    text-align: left;
-    width: 14.5vh;
-    border-radius: 1em;
-    border: 1.2px solid rgb(214, 209, 209);
-}
-
-#plan:hover {
-    border: 1.2px solid darkgray;
-    cursor: pointer;
-}
-
-.plan-typee {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    width: 50vh;
-    background-color: azure;
-    height: 3em;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.Back {
-    background-color: transparent;
-    border: none;
-    color: darkgray;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.all-btn {
-    display: flex;
-    flex-direction: row;
-    width: 25em;
-    justify-content: space-between;
-}
-
-.Back:hover {
-    color: black;
-}
-
-.plan-type {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    width: 50vh;
-}
-
-.plaa {
-    width: 280px;
-    height: 23px;
-    border-radius: 0.4em;
-    border: 1.5px solid black;
-}
-
-.pla {
-    color: darkgray;
-    font-family: pla;
-}
-
-.personal {
-    font-family: personal;
-    font-size: 20px;
-}
-
-#button-one,
-#button-two,
-#button-three,
-#button-four {
-    cursor: pointer;
-}
-
-
-
-
-/* Add your existing CSS styles here */
 .switch {
     position: relative;
     display: inline-block;
@@ -275,39 +14,6 @@ body {
     height: 0;
 }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #1e06fa;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.thanks {
-    width: 50px;
-    height: 50px;
-}
-
-#replace {
-    display: none;
-    flex-direction: column;
-}
-
-.rep-cont {
-    display: flex;
-    flex-direction: column;
-}
-
-.replace {
-    display: none;
-    flex-direction: column;
-}
-
 .slider:before {
     position: absolute;
     content: "";
@@ -319,6 +25,18 @@ body {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e06fa;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
 }
 
 input:checked + .slider {
@@ -339,3 +57,413 @@ input:checked + .slider:before {
     background-color: darkgray;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(235, 231, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.step:hover {
+    cursor: pointer;
+    background-color: #1e06fa;
+}
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    left: 3cqb;
+    position: relative;
+}
+
+.st {
+    margin: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fee {
+    font-family: font3;
+    font-weight: 100;
+}
+
+.plan-type {
+    display: flex;
+}
+
+.plan-typee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 231, 247);
+    width: 390px;
+    height: 40px;
+}
+
+.all-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    background-color: white;
+    width: 70%;
+}
+
+.Next,
+.Back {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    font-family: font2;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+}
+
+.Back:hover {
+    box-shadow: 1px 1px 3px blue;
+    cursor: pointer;
+}
+
+.Next:hover {
+    box-shadow: 1px 1px 3px blue;
+    cursor: pointer;
+}
+
+.nne {
+    justify-content: right;
+    width: 87%;
+    align-items: center;
+    display: flex;
+}
+
+.ne {
+    font-family: font3;
+    color: blue;
+}
+
+.ne input {
+    border: 1px solid gray;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    box-shadow: 0.5px 0.5px 5px blue;
+}
+
+@font-face {
+    font-family: font3;
+    src: url(/Platypi-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: font1;
+    src: url(/Jacquard24-Regular.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(/MPLUS1Code-VariableFont_wght.ttf);
+}
+
+.pla {
+    font-family: font2;
+    color: darkgray;
+}
+
+.personal {
+    font-family: font1;
+    font-size: 38px;
+    text-shadow: 1px 1px 4px blue;
+    margin-bottom: 10px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    height: 65vh;
+    width: 100%;
+    margin-left: 7%;
+    margin-top: 7.5vh;
+}
+
+#plan {
+    display: flex;
+    width: 120px;
+    margin-right: 13px;
+    height: 160px;
+    justify-content: space-evenly;
+    align-items: right;
+    border: none;
+    box-shadow: 0.5px 0.5px 3px black;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+#plan:hover {
+    box-shadow: 0.5px 0.5px 3px blue;
+    cursor: pointer;
+}
+
+.level {
+    display: flex;
+    align-items: left;
+}
+
+#replace {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 40px;
+    justify-content: space-evenly;
+}
+
+.vice {
+    display: flex;
+    flex-direction: column;
+}
+
+#prage {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 0.5px 0.5px 3px black;
+}
+
+.mid {
+    font-family: font3;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgb(12, 12, 82);
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.tot {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+.fin {
+    width: 67%;
+    border-radius: 7px;
+    display: flex;
+    background-color: rgb(242, 246, 247);
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 6vh;
+}
+
+.ar {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typeofserivice {
+    background-color: rgb(242, 246, 247);
+    width: 67%;
+    height: 6vh;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sidebar {
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 75vh;
+    border-radius: 10px;
+    margin-left: 2.5vh;
+    margin-top: 2.4vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .st {
+        display: none;
+    }
+
+    .Sidebar {
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        width: 90%;
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+    }
+
+    .step {
+        width: 45px;
+        height: 45px;
+    }
+
+    .page {
+        background-color: white;
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+        height: 70vh;
+        margin-top: 0;
+        position: relative;
+        bottom: 55px;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 2px 2px 20px grey;
+        
+    }
+
+    .ne {
+        margin: 0;
+    }
+
+    .personal {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .pla {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .ne {
+        margin-left: 10px;
+    }
+
+    .Next,
+    .Back {
+        width: 90px;
+        height: 28px;
+    }
+    
+    .plan-type {
+        margin-left: 10px;
+        display: flex;
+        height: 50%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #plan {
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #prage {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .all-fin {
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    .tot {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #fre {
+        margin-left: 10px;
+    }
+
+    .plan-typee {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .all-btn {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Sidebar {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .step-1,
+    .step-2,
+    .step-3,
+    .step-4 {
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

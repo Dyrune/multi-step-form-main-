@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pages.forEach((page) => {
       page.style.display = 'none';
     });
-    pages[index].style.display = 'block';
+    pages[index].style.display = 'flex';
     currentPageIndex = index;
   }
 
@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (toggle.checked) {
       // Switch is checked (Yearly)
       monthlyReplace.forEach((element) => (element.style.display = 'none'));
-      yearlyReplace.forEach((element) => (element.style.display = 'block'));
+      yearlyReplace.forEach((element) => (element.style.display = 'flex'));
     } else {
       // Switch is not checked (Monthly)
-      monthlyReplace.forEach((element) => (element.style.display = 'block'));
+      monthlyReplace.forEach((element) => (element.style.display = 'flex'));
       yearlyReplace.forEach((element) => (element.style.display = 'none'));
     }
   }
