@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const pages = document.querySelectorAll('.page');
   const sidebarButtons = document.querySelectorAll('.step');
@@ -16,6 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     pages[index].style.display = 'flex';
     currentPageIndex = index;
+  
+    // Update step button background color
+    sidebarButtons.forEach((button, i) => {
+      if (i === index) {
+        button.style.backgroundColor = 'blue'; // Set active step button color
+      } else {
+        button.style.backgroundColor = 'transparent'; // Reset other step buttons
+      }
+    });
   }
 
   // Function to handle the "Next" button click
@@ -65,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       yearlyReplace.forEach((element) => (element.style.display = 'none'));
     }
   }
+
 
   // Add click event listeners to the "Next" buttons
   nextButtons.forEach((button) => {
@@ -268,14 +277,69 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initially, calculate the total fee based on the default selection
     calculateTotalFee();
   });
+  
 
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebarButtons = document.querySelectorAll('.step');
+    const pages = document.querySelectorAll('.page');
+  
+    // Function to show a specific page and disable appropriate sidebar buttons
+    function showPage(index) {
+      // Hide all pages
+      pages.forEach((page, i) => {
+        if (i === index) {
+          page.style.display = 'flex';
+        } else {
+          page.style.display = 'none';
+        }
+      });
+  
+      // Disable appropriate sidebar buttons based on the current page
+      sidebarButtons.forEach((button, i) => {
+        button.disabled = (i !== index);
+      });
+    }
+  
+    // Add click event listeners to the sidebar buttons
+    sidebarButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        showPage(index);
+      });
+    });
+  
+    // Initially show the first page
+    showPage(0);
+  });
+  
+ // Variables to track button click status
+let pageTwoButtonClicked = false;
+let pageThreeButtonClicked = false;
 
+// Add event listeners to #plan buttons on page two
+const pageTwoPlanButtons = document.querySelectorAll('#page-two [data-plan]');
+pageTwoPlanButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        pageTwoButtonClicked = true;
+        enableNextButton();
+    });
+});
 
+// Add event listeners to add-ons buttons on page three
+const pageThreeAddonsButtons = document.querySelectorAll('#page-three button.add-ons');
+pageThreeAddonsButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        pageThreeButtonClicked = true;
+        enableNextButton();
+    });
+});
 
-
-
-
-
-
-
-
+// Function to enable/disable the Next button based on button click status
+function enableNextButton() {
+    const nextButton = document.querySelector('.Next');
+    if (pageTwoButtonClicked || pageThreeButtonClicked) {
+        nextButton.removeAttribute('disabled');
+    } else {
+        nextButton.setAttribute('disabled', 'disabled');
+    }
+}

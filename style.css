@@ -332,6 +332,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.replace.hidden {
+    display: none;
+}
+
+#replace.hidden {
+    display: none;
+}
+
+
 @media screen and (max-width: 800px) {
 
     .container {
@@ -405,13 +414,23 @@ body {
         align-items: center;
     }
 
+    #plan:hover {
+        box-shadow: 5px 5px 15px blue;
+    }
+
     #plan {
         width: 80%;
+        margin-top: 10px;
         height: 10vh;
         display: flex;
         flex-direction: row;
         justify-content: start;
         align-items: center;
+    }
+
+    #prage:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 8px blue;
     }
 
     #prage {
